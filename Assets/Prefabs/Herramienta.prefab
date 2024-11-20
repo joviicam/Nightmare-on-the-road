@@ -12,9 +12,11 @@ GameObject:
   - component: {fileID: 33308841920817538}
   - component: {fileID: 23457036828626168}
   - component: {fileID: 64452229418851078}
+  - component: {fileID: 6649258241831952602}
+  - component: {fileID: 3358905208241639079}
   m_Layer: 0
   m_Name: Herramienta
-  m_TagString: Untagged
+  m_TagString: Herramienta
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -107,6 +109,40 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 43115087190295100, guid: 63edead4a6eeae54daf9759384390759, type: 2}
+--- !u!114 &6649258241831952602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1429856634174740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 457b53ee8290bee41bd1c046610d8a6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: herramienta
+--- !u!65 &3358905208241639079
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1429856634174740}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.61, y: 0.76, z: 1.53}
+  m_Center: {x: 0.000000019557774, y: 0, z: 0.07360466}
 --- !u!1 &6012825978992792570
 GameObject:
   m_ObjectHideFlags: 0

@@ -4,6 +4,9 @@ public class Key : MonoBehaviour
 {
     private bool isPlayerInRange = false;
 
+    // Agregar una variable para el ID del objeto
+    public string itemId;
+
     private void OnTriggerEnter(Collider other)
     {
         // Verifica si el jugador ha entrado en el rango de la llave
@@ -24,7 +27,7 @@ public class Key : MonoBehaviour
 
     private void Update()
     {
-        // Solo permite recoger la llave si el jugador está en el rango y presiona "E"
+        // Solo permite recoger el ítem si el jugador está en el rango y presiona "E"
         if (isPlayerInRange && Input.GetKeyDown(KeyCode.E))
         {
             // Encuentra el script de inventario en el jugador
@@ -32,8 +35,9 @@ public class Key : MonoBehaviour
 
             if (inventory != null)
             {
-                inventory.AddItem("Llave");
-                Destroy(gameObject); // Elimina la llave de la escena
+                // Usa el itemId que se ha asignado en el inspector para agregar el ítem al inventario
+                inventory.AddItem(itemId);
+                Destroy(gameObject); // Elimina el objeto de la escena
             }
         }
     }

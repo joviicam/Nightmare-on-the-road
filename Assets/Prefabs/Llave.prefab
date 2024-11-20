@@ -120,6 +120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 457b53ee8290bee41bd1c046610d8a6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemId: llave
 --- !u!54 &6321687639661255778
 Rigidbody:
   m_ObjectHideFlags: 0
