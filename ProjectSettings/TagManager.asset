@@ -9,6 +9,9 @@ TagManager:
   - Llave
   - Gasolina
   - Herramienta
+  - PuertaLlave
+  - Interior
+  - Exterior
   layers:
   - Default
   - TransparentFX
@@ -23,7 +26,7 @@ TagManager:
   - layerPuerta
   - Pared
   - Laberinto
-  - 
+  - Interactable
   - 
   - 
   - 
