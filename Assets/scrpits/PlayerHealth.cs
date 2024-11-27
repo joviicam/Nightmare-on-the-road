@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class PlayerHealth : MonoBehaviour
 {
     public int maxHealth = 100; // Vida máxima
-    public float regenerationTime = 120f; // Tiempo en segundos para regeneración completa
+    public float regenerationTime = 60f; // Tiempo en segundos para regeneración completa
     public Image damageOverlay; // Imagen para el parpadeo de daño
     public Slider healthBar; // Barra de vida
 
