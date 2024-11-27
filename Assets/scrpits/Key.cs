@@ -7,12 +7,21 @@ public class Key : MonoBehaviour
     // Agregar una variable para el ID del objeto
     public string itemId;
 
+    // Agregar una referencia para un AudioSource asignado manualmente
+    public AudioSource rangeAudioSource;
+
     private void OnTriggerEnter(Collider other)
     {
         // Verifica si el jugador ha entrado en el rango de la llave
         if (other.CompareTag("Player"))
         {
             isPlayerInRange = true;
+
+            // Reproduce el sonido asignado si no está ya reproduciéndose
+            if (rangeAudioSource != null && !rangeAudioSource.isPlaying)
+            {
+                rangeAudioSource.Play();
+            }
         }
     }
 
@@ -22,6 +31,12 @@ public class Key : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             isPlayerInRange = false;
+
+            // Detén el sonido cuando el jugador sale del rango
+            if (rangeAudioSource != null && rangeAudioSource.isPlaying)
+            {
+                rangeAudioSource.Stop();
+            }
         }
     }
 
